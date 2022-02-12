@@ -1,0 +1,71 @@
+body,
+* {
+	font-family: "Hack NF";
+	text-align: center;
+}
+
+.everything {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	background-image: url(./BackgroundPatternZigZag.jpg);
+
+	filter: greyscale(100%);
+}
+
+.container {
+	max-width: 60%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+main,
+header {
+	max-width: 60%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+button,
+input {
+	background-color: white;
+	border: solid 1px black;
+	padding: 2px 5px;
+	border-radius: 2px;
+}
+
+input:disabled,
+button:disabled {
+	color: rgb(187, 185, 185);
+	border: solid 1px rgb(187, 185, 185);
+}
+
+#RestartBtn {
+	display: none;
+}
+
+#tries {
+	padding: 2px;
+	display: inline-block;
+	font-size: smaller;
+	border: solid 1px black;
+	border-radius: 2px;
+}
+
+.whole {
+	border: black 2px solid;
+	border-radius: 5px;
+}
+
+#results {
+	width: 100%;
+}
+
+#RestartBtn {
+	margin: 10px;
+}
