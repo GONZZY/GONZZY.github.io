@@ -1,2 +1,0 @@
-# GONZZY.github.io
- 
