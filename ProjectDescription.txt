@@ -1,0 +1,2 @@
+This is a website containing some recipes, each having a link to them.
+It is made purely with HTML so it won't be very pretty.
