@@ -1,0 +1,59 @@
+body 
+{
+      background-color: dcd3d2;
+      text-align: center;
+      font-family: courier,sans serrif
+}
+p
+{ 
+      color: blueviolet
+}
+a:link
+{
+      color:green;
+      background-color: transparent;
+      text-decoration: none;
+}
+a:visited{
+      color: royalblue;
+      background-color: transparent;
+      text-decoration: none;
+}
+a:hover{
+      color:red;
+      background-color: transparent;
+}
+a:link, a:visited 
+{
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+}
+    
+a:hover, a:active 
+{
+      background-color: blue;
+}
+table{
+      width: 100%;
+      border-spacing: 10px;
+}
+
+/*table,*/ th, td{
+      border: 1px solid black;
+      /*border-collapse: collapse;*/
+      border-radius: 10px;
+      
+}
+th,td{
+      /*background-color: #96D4D4;*/
+      border-style: inset;
+      padding: 30px;
+      
+}
+tr:nth-child(even){
+      background-color: #D6EEEE
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+		<title>NB Guessing Game</title>
+	</head>
+	<body class="everything">
+		<div class="container whole">
+			<a href="../index.html">Go back main page</a>
+			<header class="container">
+				<h1>Number Guessing Game</h1>
+			</header>
+			<main class="container" id="main">
+				<div>
+					<p>
+						We have selected a random number between 1 and 100. See if you can
+						guess it in 10 turns or fewer. We'll tell you if your guess was too
+						high or too low.
+					</p>
+				</div>
+				<div>
+					<p id="answer"></p>
+					<label for="Question">Enter a number: </label>
+					<input class="inputs" id="inp" type="number" />
+					<button id="btnSubmit" onclick="Game()">Submit answer</button>
+					<p id="tries">0/10</p>
+				</div>
+				<div>
+					<h3 id="previous">Previous Guesses:</h3>
+				</div>
+				<div id="results">
+					<h3 id="result"></h3>
+					<p id="clue"></p>
+				</div>
+				<button id="RestartBtn" onclick="Reset()">Restart Game</button>
+			</main>
+		</div>
+	</body>
+</html>
