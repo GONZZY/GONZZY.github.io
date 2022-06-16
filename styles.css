@@ -1,0 +1,21 @@
+body,
+* {
+	font-family: "Hack NF";
+	text-align: center;
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.logo{
+    height:50px;
+    width: 100%;
+}
+
+.logo img{
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+}
