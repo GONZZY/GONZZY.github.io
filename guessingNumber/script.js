@@ -10,7 +10,7 @@ inputbutton.addEventListener("keyup", (e) => {
 		document.getElementById("btnSubmit").click();
 	}
 });
-
+// This is a test
 mystery = Math.floor(Math.random() * 100);
 
 function Game() {
