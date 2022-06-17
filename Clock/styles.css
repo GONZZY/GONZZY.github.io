@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    font-family: 'Hack Nf';
+    
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+button{
+    min-width: 50px;
+    min-height: 20px;
+    padding: 15px 40px;
+    background-color: white;
+    border-style: solid;
+    border-color:black;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}

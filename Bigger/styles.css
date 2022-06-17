@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    font-family: 'Hack Nf';
+    
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+h2{
+    
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding:20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button, input{
+    min-width: 50px;
+    min-height: 20px;
+    padding: 15px 40px;
+    background-color: white;
+    border-style: solid;
+    border-color:black;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+input{
+    cursor:text;
+}
+
+div{
+    margin: 25px;
+}
+button:hover{
+    transition: 0.5s;
+    color:white;
+    background-color: black;
+}

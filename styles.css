@@ -1,12 +1,22 @@
 body,
 * {
 	font-family: "Hack NF";
-	text-align: center;
-    padding: 20px;
+
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
 }
 
 ul{
     list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .logo{
@@ -15,7 +25,17 @@ ul{
 }
 
 .logo img{
+    border-radius: 50%;
     height: 50px;
     width: 80px;
-    border-radius: 50%;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainTitle{
+    text-align: center;
 }

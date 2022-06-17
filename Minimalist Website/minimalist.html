@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test #1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/e62d1773b7.js" crossorigin="anonymous"></script>">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="body-background">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCTaq_7oYnGK3sPDfG014szsa6SITWvy_eQg&usqp=CAU"
+        alt=""
+        class="body-background-img"
+      />
+    </div>
+    </div>
+    <header>
+      <nav>
+        <div class="flex-column">
+          <div class="nav-brand">
+            <img
+              src="https://www.creativefabrica.com/wp-content/uploads/2019/03/Monogram-OG-Logo-Design-by-Greenlines-Studios.jpg"
+              alt=""
+            />
+          </div>
+          <a href="../index.html">Go back to main page</a>
+          <div class="nav-links">
+            <ul>
+              <li class="nav-items">
+                <a href="#" class="nav-item-link">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-item-link">Contact</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-item-link">Offer</a>
+              </li>
+              <li class="nav-items">
+                <a href="#" class="nav-item-link">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="flex-row-1">
+          <div class="title">
+            <h1>Welcome to my minimalist website</h1>
+            <h3>Less doesn't mean empty</h3>
+          </div>
+          <div class="btn">
+            <h2><a href="" class="btn-link">Learn More</a></h2>
+          </div>
+        </div>
+        <div class="flex-row-2">
+          <div class="arrow-down"><a href="#infos" class="btn-arrow"><i class="fas fa-arrow-down"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos">
+      <div class="container">
+        <div class="flex-row-info">
+          <div class="col-2">
+            <h2>The mission</h2>
+            <h3>
+              I design websites to learn skills which will allow me to create
+              and be useful to humanity.
+            </h3>
+          </div>
+          <div class="col-2">
+            <h2>How to achieve it?</h2>
+            <h3>
+              To start, you need to learn the basics which I am consolidating by
+              building this website. So, learn HTML and CSS and once you're okay
+              at it you can start Javascript and it's framework.
+            </h3>
+          </div>
+        </div>
+        <!--
+        <div class="img-background-2">
+          <img src="data:image/png;base64,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" alt="" class="img-splash">
+        </div>
+      -->
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="flex-row">
+          <div class="footer-col-1">
+            <h3>
+              What do you think about my website?
+              <br />
+              Write me @olivier_goncalves12
+            </h3>
+          </div>
+          <div class="footer-col-2">less doesn't mean empty</div>
+          <div class="footer-col-3">
+            <div class="footer-links">
+              <ul>
+                <li class="">
+                  <a href="#" class="footer-item-link">Home</a>
+                </li>
+                <li class="">
+                  <a href="#" class="footer-item-link">Contact</a>
+                </li>
+                <li class="">
+                  <a href="#" class="footer-item-link">Offer</a>
+                </li>
+                <li class="">
+                  <a href="#" class="footer-item-link">About us</a>
+                </li>
+              </ul>
+              </div>
+          </div>
+        </div>
+        <hr class="footer-line" />
+        <div class="copyright">
+          <h3>&copy;Copyright Olivier Goncalves - 2020</h3>
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>
