@@ -46,7 +46,7 @@ ul li{
     
 }
 
-.ingredientList{
+.RecipeItem{
     text-align: left;
     margin:0;
     padding-top: 0;
@@ -90,4 +90,9 @@ button:hover, .btnSubmit:hover{
 
 #UserInfos{
     display: none;
+}
+
+.step{
+    text-align: left;
+    margin: 30px;
 }
