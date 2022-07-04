@@ -1,98 +1,93 @@
 body,
 * {
 	font-family: "Hack NF";
-    padding: 0;
-    text-align: center;
+	padding: 0;
+	text-align: center;
 }
 
-a:hover{
-    color: rgb(255, 0, 0);
+a:hover {
+	color: rgb(255, 0, 0);
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+.logo {
+	height: 90px;
+	width: auto;
+	border-radius: 90%;
+}
+ul li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
 }
 
-ul li{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.logo{
-    height:50px;
-    width: 100%;
+.mainTitle {
+	text-align: center;
 }
 
-.logo img{
-    border-radius: 50%;
-    height: 50px;
-    width: 80px;
+.recipeHeaders {
+	text-decoration: underline;
 }
 
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.RecipeItem {
+	text-align: left;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+button,
+input {
+	width: 25%;
+	min-height: 20px;
+	padding: 15px 40px;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	margin: 10px;
+}
+button:hover,
+.btnSubmit:hover {
+	transition: 0.5s;
+	color: white;
+	background-color: black;
 }
 
-.mainTitle{
-    text-align: center;
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
-.recipeHeaders{
-    text-decoration: underline;
-    
+.textInput {
+	cursor: text;
+	text-align: center;
+	max-width: 25%;
+	margin: 15px;
 }
 
-.RecipeItem{
-    text-align: left;
-    margin:0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-button, input{
-    width: 25%;
-    min-height: 20px;
-    padding: 15px 40px;
-    background-color: white;
-    border-style: solid;
-    border-color:black;
-    border-width: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    margin: 10px;
-}
-button:hover, .btnSubmit:hover{
-    transition: 0.5s;
-    color:white;
-    background-color: black;
-    
+#UserInfos {
+	display: none;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.step {
+	text-align: left;
+	margin: 30px;
 }
-
-.textInput{
-    cursor: text;
-    text-align: center;
-    max-width: 25%;
-    margin:15px
-    
-}
-
-#UserInfos{
-    display: none;
-}
-
-.step{
-    text-align: left;
-    margin: 30px;
+a {
+	color: black;
 }

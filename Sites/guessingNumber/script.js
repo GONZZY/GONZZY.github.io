@@ -17,14 +17,11 @@ function Game() {
 	var guess;
 	if (nbGuess <= 10) {
 		if (nbGuess == 0) {
-			
 			//document.getElementById("answer").innerHTML = mystery;
 		}
-		
-			guess = document.getElementById("inp").value;
-			
-		
-		
+
+		guess = document.getElementById("inp").value;
+
 		ShowPrevious(guess);
 		VerifyGuess(guess, mystery);
 		++nbGuess;
@@ -32,7 +29,9 @@ function Game() {
 		if (nbGuess == 10 && gameOn == true) {
 			var clue = document.getElementById("clue");
 			clue.textContent =
-				"You lost you tried " + nbGuess + " times and didn't get it !";
+				"Vous avez perdue, vous avez essayé " +
+				nbGuess +
+				" fois, mais vous ne l'avez pas trouvé !";
 			EndGame();
 		}
 	}
@@ -44,23 +43,31 @@ function ShowPrevious(guess) {
 	var previous = document.getElementById("previous");
 	previous.innerHTML = previous.textContent + " " + guess;
 }
-
+function CheckGuess(guess) {
+	guess = getElementById("inp").value;
+}
 function VerifyGuess(guess, mystery) {
 	var result = document.getElementById("result");
 	var clue = document.getElementById("clue");
+	while (guess == "") {
+		result.style.background = "none";
+		result.textContent = null;
+		clue.textContent = "Vous devez entrer un nombre!";
+		CheckGuess(guess);
+	}
 	if (guess < mystery) {
-		result.textContent = "Wrong";
+		result.textContent = "Incorrect";
 		result.style.background = "red";
-		clue.textContent = "Too low!";
+		clue.textContent = "Trop bas!";
 	} else if (guess > mystery) {
-		result.textContent = "Wrong";
+		result.textContent = "Incorrect";
 		result.style.background = "red";
-		clue.textContent = "Too high!";
+		clue.textContent = "Trop haut!";
 	} else {
-		result.textContent = "Right!";
+		result.textContent = "Correct!";
 		result.style.background = "greenyellow";
 		clue.textContent =
-			"you got the right answer in " + (nbGuess + 1) + " tries !";
+			"Vous avez eu la bonne réponse en " + (nbGuess + 1) + " essais !";
 		EndGame();
 	}
 }
