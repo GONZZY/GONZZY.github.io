@@ -3,6 +3,7 @@ body,
 	font-family: "Hack NF";
 	padding: 0;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 a:hover {
@@ -13,17 +14,33 @@ ul {
 	list-style-type: none;
 	padding: 0;
 }
-.logo {
-	height: 90px;
-	width: auto;
-	border-radius: 90%;
-}
+
 ul li {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 }
-
+.Titre-Principale {
+	height: 18vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.empty {
+	width: 20%;
+	display: inline-block;
+	color: white;
+}
+#logo-img {
+	height: auto;
+	display: inline-block;
+	padding: 20px;
+	width: 20%;
+	max-width: 240px;
+	max-height: 240px;
+	min-height: 70px;
+	min-width: 70px;
+}
 .center {
 	display: block;
 	margin-left: auto;
@@ -32,6 +49,7 @@ ul li {
 
 .mainTitle {
 	text-align: center;
+	display: inline-block;
 }
 
 .recipeHeaders {
@@ -90,4 +108,22 @@ button:hover,
 }
 a {
 	color: black;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 10px;
+	}
+	#logo-img {
+		width: 18vw;
+		height: auto;
+		top: 8vh;
+		padding: 12px;
+	}
+	.mainTitle {
+		font-size: 14px;
+	}
+	.Titre-Principale {
+		height: 20em;
+	}
 }
