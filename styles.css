@@ -21,7 +21,7 @@ ul li {
 	text-align: center;
 }
 .Titre-Principale {
-	height: 18vh;
+	height: 20vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -32,12 +32,15 @@ ul li {
 	color: white;
 }
 #logo-img {
-	height: auto;
-	display: inline-block;
-	padding: 20px;
+	height: 90%;
+}
+.logo-container {
+	height: inherit;
+	display: block;
+	padding: auto;
 	width: 20%;
-	max-width: 240px;
-	max-height: 240px;
+
+	max-height: 200px;
 	min-height: 70px;
 	min-width: 70px;
 }
@@ -114,16 +117,11 @@ a {
 	body {
 		font-size: 10px;
 	}
-	#logo-img {
-		width: 18vw;
-		height: auto;
-		top: 8vh;
-		padding: 12px;
-	}
+
 	.mainTitle {
 		font-size: 14px;
 	}
 	.Titre-Principale {
-		height: 20em;
+		height: 20vw;
 	}
 }
