@@ -1,127 +1,109 @@
-body,
-* {
+*,
+body {
 	font-family: "Hack NF";
-	padding: 0;
-	text-align: center;
 	box-sizing: border-box;
-}
-
-a:hover {
-	color: rgb(255, 0, 0);
-}
-
-ul {
-	list-style-type: none;
+	margin: 0;
 	padding: 0;
-}
-
-ul li {
-	padding-top: 20px;
-	padding-bottom: 20px;
 	text-align: center;
-}
-.Titre-Principale {
-	height: 20vw;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.empty {
-	width: 20%;
-	display: inline-block;
-	color: white;
 }
 #logo-img {
-	height: 90%;
-}
-.logo-container {
-	height: inherit;
-	display: block;
-	padding: auto;
-	width: 20%;
-
-	max-height: 200px;
-	min-height: 70px;
-	min-width: 70px;
-}
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	height: 12vw;
+	margin-top: 1vw;
 }
 
-.mainTitle {
-	text-align: center;
-	display: inline-block;
-}
-
-.recipeHeaders {
-	text-decoration: underline;
-}
-
-.RecipeItem {
-	text-align: left;
-	margin: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-button,
-input {
-	width: 25%;
-	min-height: 20px;
-	padding: 15px 40px;
-	background-color: white;
-	border-style: solid;
-	border-color: black;
-	border-width: 2px;
-	border-radius: 5px;
-	cursor: pointer;
-	color: black;
-	font-weight: bold;
-	margin: 10px;
-}
-button:hover,
-.btnSubmit:hover {
-	transition: 0.5s;
-	color: white;
-	background-color: black;
-}
-
-.container {
+.Contenu {
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
+	grid-gap: 3vw;
+	margin: 2vw 8vw;
+	font-size: 1.4vw;
 }
-
-.textInput {
-	cursor: text;
-	text-align: center;
-	max-width: 25%;
-	margin: 15px;
+.Liste-Sites,
+.Connaissances,
+.A-Propos {
+	border: rgb(241, 241, 248);
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-#UserInfos {
-	display: none;
+.Connaissances,
+.A-Propos {
+	width: 30%;
 }
-
-.step {
+.A-Propos ul {
+	margin: 2vw;
+	list-style: none;
+	height: 80%;
+	font-size: 1vw;
+}
+.A-Propos ul li {
 	text-align: left;
-	margin: 30px;
+	margin: 2vw;
 }
-a {
+.Liste-Sites {
+	width: 40%;
+}
+
+.Liste-Sites ul,
+.Connaissances ul {
+	list-style: none;
+}
+
+.Liste-Sites li {
+	margin: 2vw 0;
+}
+
+.Liste-Sites a {
 	color: black;
 }
 
-@media screen and (max-width: 500px) {
+.Connaissances li {
+	margin: 2vw 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Connaissances h3,
+.Gauge {
+	display: inline-block;
+	font-size: 1.2vw;
+	height: 1.2vw;
+}
+.Gauge {
+	width: 13vw;
+	border-radius: 20px;
+	border: rgba(0, 0, 0, 0.24) solid 1px;
+	padding: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+	*,
 	body {
-		font-size: 10px;
+		font-size: 8px;
 	}
 
-	.mainTitle {
-		font-size: 14px;
+	h2 {
+		font-size: 12px;
 	}
-	.Titre-Principale {
-		height: 20vw;
+	.Contenu {
+		flex-direction: column;
+		align-items: center;
+	}
+	.Liste-Sites,
+	.A-Propos,
+	.Connaissances {
+		width: 70vw;
+	}
+
+	.Connaissances h3 {
+		font-size: 8px;
+		height: 20px;
+	}
+
+	.Gauge {
+		height: 8px;
+		width: 18vw;
+	}
+	.A-Propos ul li {
+		text-align: center;
 	}
 }
